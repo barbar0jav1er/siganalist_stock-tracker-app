@@ -2,7 +2,6 @@
 import { NAV_ITEMS } from "@/lib/const";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { title } from "process";
 import React from "react";
 
 const NavItems = () => {
