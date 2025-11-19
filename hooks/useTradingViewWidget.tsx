@@ -1,4 +1,5 @@
 "use client";
+import { MARKET_OVERVIEW_WIDGET_CONFIG } from "@/lib/const";
 import { useEffect, useRef } from "react";
 const useTradingViewWidget = (
   scriptUrl: string,
@@ -12,7 +13,7 @@ const useTradingViewWidget = (
 
     if (containerRef.current.dataset.loaded) return;
 
-    containerRef.current.innerHTML = `<div class="trading-widget-container__widget" style="width:  100%; hight:${height}px"></div>`;
+    containerRef.current.innerHTML = `<div class="trading-widget-container__widget" style="width:  100; hight:${height}px"></div>`;
 
     const script = document.createElement("script");
     script.src = scriptUrl;
