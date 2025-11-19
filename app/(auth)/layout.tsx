@@ -23,17 +23,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             Signalist turned my watchlist into a winning list. The alerts are
             spot-on, and I feel more confident making moves in the market
           </blockquote>
-          <div className="flex item-center justify-between">
+          <div className="flex items-center justify-between">
             <div>
               <cite className="auth-testimonial-author">- Ethan R.</cite>
               <p className="max-md-text-xs text-gray-500">Retail Investor</p>
             </div>
-            <div className="flex item-center gap-0 5">
-              {[1, 2, 3, 4, 5].map((start) => (
+            <div className="flex item-center gap-0.5">
+              {[1, 2, 3, 4, 5].map((star) => (
                 <Image
-                  key={start}
+                  key={star}
                   src="/assets/icons/star.svg"
-                  alt="Start"
+                  alt="Star"
                   width={20}
                   height={20}
                   className="w-5 h-5"
